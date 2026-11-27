@@ -1,0 +1,1 @@
+import{B as s,h as a,g as o,d as c}from"./analytics.BNsA_vkh.js";const e=document.querySelector("[data-cookie-banner]");e&&!localStorage.getItem(s)&&!a()&&(e.hidden=!1,e.classList.add("is-entering"),e.addEventListener("click",n=>{const t=n.target.closest("[data-consent]")?.dataset.consent;t&&(t==="accept"?o():c(),e.classList.add("is-leaving"),setTimeout(()=>e.hidden=!0,350))}));

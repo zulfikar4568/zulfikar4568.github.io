@@ -1,0 +1,1 @@
+import{r as o,g as r}from"./motion.BEAmG49p.js";o(document.querySelector("[data-about]"),e=>{e.querySelectorAll("[data-count]").forEach(t=>{const a={val:0};t.textContent="0",r.to(a,{val:Number(t.dataset.count),duration:1.6,ease:"power2.out",snap:{val:1},scrollTrigger:{trigger:t,start:"top 90%",once:!0},onUpdate:()=>{t.textContent=String(a.val)}})})});

@@ -18,13 +18,27 @@
     <link rel="canonical" href="https://zulfikarisnaen.com/">
     
     <!-- Theme and performance -->
-    <meta name="theme-color" content="#0d6efd">
-    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#0e1013">
+    <meta name="color-scheme" content="dark light">
+    <!-- Apply the saved/system theme before first paint to avoid a flash. -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (t !== 'light' && t !== 'dark') {
+            t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+          }
+          document.documentElement.dataset.theme = t;
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', t === 'light' ? '#f6f5f1' : '#0e1013');
+        } catch (e) {}
+      })();
+    </script>
     
     <!-- Preconnect to important origins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preload" as="image" href="/assets/images/zulfikar3.webp" type="image/webp">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="profile">
@@ -225,11 +239,11 @@
     </script>
     
     <title>Zulfikar Isnaen - MES Engineer & Software Engineer</title>
-    <script type="module" crossorigin src="/js/index-DkM8gmJv.js"></script>
-    <link rel="modulepreload" crossorigin href="/js/chunk-Besja4ol.js">
-    <link rel="modulepreload" crossorigin href="/js/chunk-CQt3LdEx.js">
+    <script type="module" crossorigin src="/js/index-Dn5743IY.js"></script>
+    <link rel="modulepreload" crossorigin href="/js/chunk-BxaB8ufH.js">
+    <link rel="modulepreload" crossorigin href="/js/chunk-DBIjkvmZ.js">
     <link rel="modulepreload" crossorigin href="/js/chunk-BA7ZlSIT.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-CUW5b43C.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-DRM8Scwe.css">
   </head>
   <body id="home">
     <div id="app"></div>
